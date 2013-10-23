@@ -22,6 +22,8 @@ public class FizzBuzzer {
     public String parse(int number) {
         if (isFizz(number)) {
             return "Fizz";
+        } else if (String.valueOf(number).contains("7")) {
+            return "Buzz";
         }
         return String.valueOf(number);
     }
