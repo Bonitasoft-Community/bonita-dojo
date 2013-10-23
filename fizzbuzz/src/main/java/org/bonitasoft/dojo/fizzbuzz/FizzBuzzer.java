@@ -19,23 +19,28 @@ package org.bonitasoft.dojo.fizzbuzz;
 
 public class FizzBuzzer {
 
-    private static final int FIZZ_NUMBER = 3;
+    private static final int BUZZ = 7 ;
+    private static final int FIZZ = 3;
 
     public String parse(int number) {
-        if (isFizz(number)) {
+        if (should(FIZZ, number)) {
             return "Fizz";
-        } else if (contains(number, 7) || number % 7 == 0) {
+        } else if (should(BUZZ, number)) {
             return "Buzz";
         }
         return String.valueOf(number);
+    }
+
+    private boolean should(int specialNumber, int parsedNumber) {
+        return contains(parsedNumber, specialNumber) || isDivisibleBy(parsedNumber, specialNumber);
     }
 
     private boolean contains(int number, Integer content) {
         return String.valueOf(number).contains(content.toString());
     }
 
-    private boolean isFizz(int number) {
-        return contains(number, FIZZ_NUMBER) || number % FIZZ_NUMBER == 0;
+    private boolean isDivisibleBy(int number, int diviser) {
+        return number % diviser == 0;
     }
 
 }
