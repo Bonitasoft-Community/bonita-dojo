@@ -17,7 +17,11 @@
  */
 package org.bonitasoft.dojo.fizzbuzz;
 
+import static org.hamcrest.Matchers.is;
+import static org.junit.Assert.*;
+
 import org.junit.Before;
+import org.junit.Test;
 
 /**
  * Given a number
@@ -42,5 +46,13 @@ public class FizzBuzzerTest {
     @Before
     public void initializeFizzBuzzer() {
         fizzBuzzer = new FizzBuzzer();
+    }
+    
+    @Test
+    public void parse_return_number_if_number_is_not_Fizz_and_not_Buzz() throws Exception {
+        
+        String result = fizzBuzzer.parse(1);
+        
+        assertThat(result, is("1"));
     }
 }

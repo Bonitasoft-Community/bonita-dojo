@@ -20,7 +20,7 @@ package org.bonitasoft.dojo.fizzbuzz;
 public class FizzBuzzer {
 
     public String parse(int number) {
-        throw new RuntimeException("Not yet implemented");
+        return "1";
     }
 
 }
