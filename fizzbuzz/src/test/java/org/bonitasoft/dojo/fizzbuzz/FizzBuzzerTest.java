@@ -63,4 +63,12 @@ public class FizzBuzzerTest {
         
         assertThat(parseResult, is("Fizz"));
     }
+    
+    @Test
+    public void parse_return_Fizz_if_number_is_divisible_by_3() throws Exception {
+        
+        String parseResult = fizzBuzzer.parse(6);
+        
+        assertThat(parseResult, is("Fizz"));
+    }
 }

@@ -21,7 +21,7 @@ public class FizzBuzzer {
 
     public String parse(int number) {
         String n = String.valueOf(number);
-        if (n.contains("3")) {
+        if (n.contains("3") || number % 3 == 0) {
             return "Fizz";
         }
         return n;
