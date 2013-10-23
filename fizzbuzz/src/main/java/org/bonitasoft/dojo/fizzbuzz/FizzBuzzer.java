@@ -20,10 +20,11 @@ package org.bonitasoft.dojo.fizzbuzz;
 public class FizzBuzzer {
 
     public String parse(int number) {
-        if (String.valueOf(number).contains("3")) {
+        String n = String.valueOf(number);
+        if (n.contains("3")) {
             return "Fizz";
         }
-        return String.valueOf(number);
+        return n;
     }
 
 }

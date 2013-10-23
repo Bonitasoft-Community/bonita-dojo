@@ -59,8 +59,8 @@ public class FizzBuzzerTest {
     @Test
     public void parse_return_Fizz_if_number_contains_a_3() throws Exception {
         
-        String parse = fizzBuzzer.parse(131);
+        String parseResult = fizzBuzzer.parse(131);
         
-        assertThat(parse, is("Fizz"));
+        assertThat(parseResult, is("Fizz"));
     }
 }
