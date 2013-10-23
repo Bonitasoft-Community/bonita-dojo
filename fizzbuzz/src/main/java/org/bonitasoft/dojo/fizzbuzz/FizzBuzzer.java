@@ -23,7 +23,9 @@ public class FizzBuzzer {
     private static final int FIZZ = 3;
 
     public String parse(int number) {
-        if (should(FIZZ, number)) {
+        if (should(FIZZ, number) && should(BUZZ, number)) {
+            return "FizzBuzz";
+        } else if (should(FIZZ, number)) {
             return "Fizz";
         } else if (should(BUZZ, number)) {
             return "Buzz";
