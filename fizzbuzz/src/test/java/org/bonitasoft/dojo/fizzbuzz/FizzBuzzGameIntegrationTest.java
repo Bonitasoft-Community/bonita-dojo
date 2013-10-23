@@ -23,7 +23,7 @@ import static org.hamcrest.Matchers.is;
 import org.junit.Before;
 import org.junit.Test;
 
-public class FizzBuzzGameTest2 {
+public class FizzBuzzGameIntegrationTest {
 
     private FizzBuzzGame fizzBuzzGame;
 
