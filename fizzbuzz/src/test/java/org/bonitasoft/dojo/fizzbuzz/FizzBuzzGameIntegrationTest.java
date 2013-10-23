@@ -34,8 +34,8 @@ public class FizzBuzzGameIntegrationTest {
     
     @Test
     public void testPlayUntil() throws Exception {
-        String expectedGameResult = "1 2 Fizz 4 5 6 Buzz 8 Fizz 10 11 Fizz 13 Buzz Fizz 16 Buzz Fizz 19 20 FizzBuzz 22 " +
-        		"Fizz Fizz 25 26 Buzz Fizz 29 Fizz Fizz Fizz Fizz Fizz Fizz Fizz FizzBuzz Fizz Fizz 40 41";
+        String expectedGameResult = "1 2 Fizz 4 5 Fizz Buzz 8 Fizz 10 11 Fizz Fizz Buzz Fizz 16 Buzz Fizz 19 20 FizzBuzz 22 " +
+                "Fizz Fizz 25 26 FizzBuzz Buzz 29 Fizz Fizz Fizz Fizz Fizz FizzBuzz Fizz FizzBuzz Fizz Fizz 40 41";
         
         String gameResult = fizzBuzzGame.playUntil(41);
         
