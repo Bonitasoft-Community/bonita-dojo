@@ -51,8 +51,8 @@ public class FizzBuzzerTest {
     @Test
     public void parse_return_number_if_number_is_not_Fizz_and_not_Buzz() throws Exception {
         
-        String result = fizzBuzzer.parse(1);
+        String parseResult = fizzBuzzer.parse(1);
         
-        assertThat(result, is("1"));
+        assertThat(parseResult, is("1"));
     }
 }
