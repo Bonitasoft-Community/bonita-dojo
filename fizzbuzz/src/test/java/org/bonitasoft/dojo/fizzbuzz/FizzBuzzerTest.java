@@ -79,4 +79,12 @@ public class FizzBuzzerTest {
         
         assertThat(parseResult, is("Buzz"));
     }
+    
+    @Test
+    public void parse_return_Buzz_if_number_is_divisible_by_7() throws Exception {
+        
+        String parseResult = fizzBuzzer.parse(14);
+        
+        assertThat(parseResult, is("Buzz"));
+    }
 }
