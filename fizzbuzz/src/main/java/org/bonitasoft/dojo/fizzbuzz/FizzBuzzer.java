@@ -19,17 +19,23 @@ package org.bonitasoft.dojo.fizzbuzz;
 
 public class FizzBuzzer {
 
+    private static final int FIZZ_NUMBER = 3;
+
     public String parse(int number) {
         if (isFizz(number)) {
             return "Fizz";
-        } else if (String.valueOf(number).contains("7")) {
+        } else if (contains(number, 7)) {
             return "Buzz";
         }
         return String.valueOf(number);
     }
 
+    private boolean contains(int number, Integer content) {
+        return String.valueOf(number).contains(content.toString());
+    }
+
     private boolean isFizz(int number) {
-        return String.valueOf(number).contains("3") || number % 3 == 0;
+        return contains(number, FIZZ_NUMBER) || number % FIZZ_NUMBER == 0;
     }
 
 }
