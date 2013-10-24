@@ -22,7 +22,7 @@ import org.junit.Before;
 /**
  * Given a number
  *  
- *  when number is not Fizz and not Buzz return the number 
+ *  return the number in string
  *  
  *  when number contains a 3 then return Fizz
 
