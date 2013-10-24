@@ -25,6 +25,9 @@ public class FizzBuzzer {
     public String parse(int number) {
         String numberAsString = String.valueOf(number);
         
+        if (shouldReturnFizz(number, numberAsString) && shouldReturnBuzz(number, numberAsString)){
+            return FIZZ+BUZZ;
+        }
         if (shouldReturnFizz(number, numberAsString)) {
             return FIZZ;
         }
@@ -32,7 +35,7 @@ public class FizzBuzzer {
         if (shouldReturnBuzz(number, numberAsString)) {
             return BUZZ;
         }
-        
+      
         return numberAsString;
     }
 

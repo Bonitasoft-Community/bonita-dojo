@@ -69,4 +69,11 @@ public class FizzBuzzerTest {
         
         assertThat(parseResult, is("Buzz"));
     }
+    
+    @Test
+    public void if_number_is_fizz_and_buzz_return_FizzBuzz() throws Exception {
+       String parseResult =fizzBuzzer.parse(21) ;
+       assertThat(parseResult, is("FizzBuzz")) ;
+    }
+    
 }
