@@ -17,7 +17,11 @@
  */
 package org.bonitasoft.dojo.fizzbuzz;
 
+import static org.hamcrest.Matchers.is;
+import static org.junit.Assert.*;
+
 import org.junit.Before;
+import org.junit.Test;
 
 public class FizzBuzzerTest {
 
@@ -26,5 +30,13 @@ public class FizzBuzzerTest {
     @Before
     public void initializeFizzBuzzer() {
         fizzBuzzer = new FizzBuzzer();
+    }
+    
+    @Test
+    public void given_a_number_return_the_number_in_string() throws Exception {
+        
+        String parse = fizzBuzzer.parse(1);
+        
+        assertThat(parse, is("1"));
     }
 }
