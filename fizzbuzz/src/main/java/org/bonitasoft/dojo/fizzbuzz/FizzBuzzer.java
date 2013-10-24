@@ -29,11 +29,15 @@ public class FizzBuzzer {
             return FIZZ;
         }
         
-        if (numberAsString.contains("7") || number%7==0) {
+        if (shouldReturnBuzz(number, numberAsString)) {
             return BUZZ;
         }
         
         return numberAsString;
+    }
+
+    private boolean shouldReturnBuzz(int number, String numberAsString) {
+        return numberAsString.contains("7") || number%7==0;
     }
 
     private boolean shouldReturnFizz(int number, String numberAsString) {
