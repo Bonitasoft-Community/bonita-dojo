@@ -24,7 +24,8 @@ public class FizzBuzzer {
 
     public String parse(int number) {
         String numberAsString = String.valueOf(number);
-        if (number % 3 == 0 || numberAsString.contains("3")) {
+        
+        if (shouldReturnFizz(number, numberAsString)) {
             return FIZZ;
         }
         
@@ -34,5 +35,11 @@ public class FizzBuzzer {
         
         return numberAsString;
     }
+
+    private boolean shouldReturnFizz(int number, String numberAsString) {
+        return number % 3 == 0 || numberAsString.contains("3");
+    }
+    
+    
 
 }
