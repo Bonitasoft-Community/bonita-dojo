@@ -23,7 +23,10 @@ public class FizzBuzzer {
 
     public String parse(int number) {
         String numberAsString = String.valueOf(number);
-        return number % 3 == 0 || numberAsString.contains("3")?FIZZ:numberAsString;
+        if (number % 3 == 0 || numberAsString.contains("3")) {
+            return FIZZ;
+        }
+        return numberAsString;
     }
 
 }
