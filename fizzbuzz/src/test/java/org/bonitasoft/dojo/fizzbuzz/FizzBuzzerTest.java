@@ -39,4 +39,12 @@ public class FizzBuzzerTest {
         
         assertThat(parseResult, is("1"));
     }
+    
+    @Test
+    public void if_number_contains_3_return_fizz() throws Exception {
+        
+        String parseResult = fizzBuzzer.parse(13);
+        
+        assertThat(parseResult, is("Fizz"));
+    }
 }
