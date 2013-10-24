@@ -29,7 +29,7 @@ public class FizzBuzzer {
             return FIZZ;
         }
         
-        if (numberAsString.contains("7")) {
+        if (numberAsString.contains("7") || number%7==0) {
             return BUZZ;
         }
         

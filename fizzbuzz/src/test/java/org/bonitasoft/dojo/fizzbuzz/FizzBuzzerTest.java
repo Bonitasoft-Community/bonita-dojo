@@ -62,4 +62,11 @@ public class FizzBuzzerTest {
         
         assertThat(parseResult, is("Buzz"));
     }
+    
+    @Test
+    public void if_number_is_multiple_7_return_Buzz() throws Exception {
+        String parseResult = fizzBuzzer.parse(14);
+        
+        assertThat(parseResult, is("Buzz"));
+    }
 }
