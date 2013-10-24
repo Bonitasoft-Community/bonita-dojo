@@ -35,8 +35,8 @@ public class FizzBuzzerTest {
     @Test
     public void given_a_number_return_the_number_in_string() throws Exception {
         
-        String parse = fizzBuzzer.parse(1);
+        String parseResult = fizzBuzzer.parse(1);
         
-        assertThat(parse, is("1"));
+        assertThat(parseResult, is("1"));
     }
 }

@@ -20,7 +20,7 @@ package org.bonitasoft.dojo.fizzbuzz;
 public class FizzBuzzer {
 
     public String parse(int number) {
-        return "1";
+        return String.valueOf(number);
     }
 
 }
