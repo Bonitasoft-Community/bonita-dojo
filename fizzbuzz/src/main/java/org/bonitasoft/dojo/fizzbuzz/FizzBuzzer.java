@@ -22,14 +22,8 @@ public class FizzBuzzer {
     private static final String FIZZ = "Fizz";
 
     public String parse(int number) {
-        if (number % 3 == 0) {
-            return FIZZ;
-        }
         String numberAsString = String.valueOf(number);
-        if (numberAsString.contains("3")) {
-            return FIZZ;
-        }
-        return numberAsString;
+        return number % 3 == 0 || numberAsString.contains("3")?FIZZ:numberAsString;
     }
 
 }
