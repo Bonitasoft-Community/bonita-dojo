@@ -19,10 +19,15 @@ package org.bonitasoft.dojo.fizzbuzz;
 
 public class FizzBuzzer {
 
+    private static final String FIZZ = "Fizz";
+
     public String parse(int number) {
+        if (number % 3 == 0) {
+            return FIZZ;
+        }
         String numberAsString = String.valueOf(number);
-        if(numberAsString.contains("3")) {
-            return "Fizz";
+        if (numberAsString.contains("3")) {
+            return FIZZ;
         }
         return numberAsString;
     }

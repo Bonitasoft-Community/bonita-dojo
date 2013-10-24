@@ -47,4 +47,12 @@ public class FizzBuzzerTest {
         
         assertThat(parseResult, is("Fizz"));
     }
+    
+    @Test
+    public void if_number_is_multiple_3_return_fizz() throws Exception {
+        
+        String parseResult = fizzBuzzer.parse(9);
+        
+        assertThat(parseResult, is("Fizz"));
+    }
 }
