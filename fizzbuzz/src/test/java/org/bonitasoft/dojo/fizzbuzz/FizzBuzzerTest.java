@@ -55,4 +55,11 @@ public class FizzBuzzerTest {
         
         assertThat(parseResult, is("Fizz"));
     }
+    
+    @Test
+    public void if_number_contains_7_return_buzz() throws Exception {
+        String parseResult = fizzBuzzer.parse(17);
+        
+        assertThat(parseResult, is("Buzz"));
+    }
 }
